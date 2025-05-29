@@ -1,9 +1,5 @@
 import { useState } from "react";
-
-interface FormData {
-  name: string;
-  contact: string;
-}
+import { FormData } from "@/types/audit";
 
 export const useAuditForm = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -17,10 +13,15 @@ export const useAuditForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    console.log("Отправка формы начата:", formData);
+
     setIsSubmitting(true);
     setSubmitStatus("idle");
 
     try {
+      console.log("Отправляем данные на formspree...");
+
       const response = await fetch("https://formspree.io/f/xanorreo", {
         method: "POST",
         headers: {
@@ -34,10 +35,14 @@ export const useAuditForm = () => {
         }),
       });
 
+      console.log("Ответ от сервера:", response.status, response.statusText);
+
       if (response.ok) {
+        console.log("Форма отправлена успешно!");
         setSubmitStatus("success");
         setFormData({ name: "", contact: "" });
       } else {
+        console.error("Ошибка отправки:", response.status);
         setSubmitStatus("error");
       }
     } catch (error) {
