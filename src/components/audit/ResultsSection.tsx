@@ -7,8 +7,8 @@ const ResultsSection = () => {
       description: "на 40% за 3 месяца",
     },
     {
-      title: "Сокращение сроков подбора с 34 до 14 дней",
-      description: "с 34 до 12 дней",
+      title: "Сокращение сроков подбора",
+      description: "с 34 до 14 дней",
     },
     {
       title: "Рост eNPS",
