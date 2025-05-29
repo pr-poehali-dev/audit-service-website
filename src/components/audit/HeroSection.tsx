@@ -19,10 +19,17 @@ const HeroSection = () => {
           Бесплатный аудит команды и процессов — 30 минут конкретики
         </p>
 
-        <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
           Для владельцев среднего бизнеса (5–50 сотрудников), которые устали
           быть «главными HR»
         </p>
+
+        <div className="mb-8">
+          <p className="text-lg text-gray-700 font-medium">
+            Оставь заявку — получи разбор твоих 'узких мест' + чек-лист '3
+            выхода снижения текучки без бюджета'
+          </p>
+        </div>
 
         <LeadForm
           formData={formData}

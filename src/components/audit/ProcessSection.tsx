@@ -5,26 +5,26 @@ const ProcessSection = () => {
   const steps: ProcessStep[] = [
     {
       number: "01",
-      title: "Диагностика проблем",
-      description: "Выявляем болевые точки в управлении командой за 15 минут",
+      title: "10 вопросов тебе",
+      description: "Проверим, что ты на самом деле думаешь о своем бизнесе",
     },
     {
       number: "02",
-      title: "Анализ процессов",
-      description: "Находим слабые места в бизнес-процессах и коммуникации",
+      title: "Анонимный eNPS-опрос команды",
+      description: "Узнай, что о тебе думают на самом деле",
     },
     {
       number: "03",
-      title: "План действий",
-      description: "Даём конкретные рекомендации для улучшения эффективности",
+      title: "Консультация с разбором",
+      description: "Без воды, только конкретные точки роста",
     },
   ];
 
   return (
     <section className="py-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-          Как проходит аудит
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+          Разберём твой бизнес за 3 шага
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step) => (
