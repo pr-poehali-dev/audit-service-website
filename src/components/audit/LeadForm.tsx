@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import { FormData } from "@/types/audit";
+import { AuditFormData } from "@/types/audit";
 
 interface LeadFormProps {
-  formData: FormData;
+  formData: AuditFormData;
   isSubmitting: boolean;
   submitStatus: "idle" | "success" | "error";
   onSubmit: (e: React.FormEvent) => void;
