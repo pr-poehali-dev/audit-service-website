@@ -36,6 +36,13 @@ const LeadForm = ({
             className="h-12"
             disabled={isSubmitting}
           />
+          <Input
+            placeholder="Ваш email"
+            value={formData.email}
+            onChange={(e) => onInputChange("email", e.target.value)}
+            className="h-12"
+            disabled={isSubmitting}
+          />
           <Button
             type="submit"
             className="w-full h-12 text-lg bg-blue-500 hover:bg-blue-600 disabled:opacity-50"
