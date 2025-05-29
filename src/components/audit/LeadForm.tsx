@@ -30,7 +30,7 @@ const LeadForm = ({
             disabled={isSubmitting}
           />
           <Input
-            placeholder="Телефон или Telegram"
+            placeholder="Ваш телефон или @telegram"
             value={formData.contact}
             onChange={(e) => onInputChange("contact", e.target.value)}
             className="h-12"

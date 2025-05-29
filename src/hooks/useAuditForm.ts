@@ -4,7 +4,7 @@ import { AuditFormData } from "@/types/audit";
 export const useAuditForm = () => {
   const [formData, setFormData] = useState<AuditFormData>({
     name: "",
-    email: "",
+    contact: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<
@@ -15,7 +15,7 @@ export const useAuditForm = () => {
     e.preventDefault();
 
     // Проверяем, что все поля заполнены
-    if (!formData.name.trim() || !formData.email.trim()) {
+    if (!formData.name.trim() || !formData.contact.trim()) {
       console.log("Поля не заполнены:", formData);
       setSubmitStatus("error");
       return;
@@ -31,10 +31,11 @@ export const useAuditForm = () => {
 
       const formDataToSend = new FormData();
       formDataToSend.append("name", formData.name);
-      formDataToSend.append("email", formData.email);
+      formDataToSend.append("contact", formData.contact);
+      formDataToSend.append("email", "noreply@audit.com"); // Скрытое email поле для Formspree
       formDataToSend.append(
         "message",
-        `Новая заявка на аудит от ${formData.name}. Email: ${formData.email}`,
+        `Новая заявка на аудит от ${formData.name}. Контакт: ${formData.contact}`,
       );
 
       const response = await fetch("https://formspree.io/f/xpwdvvyk", {
@@ -47,7 +48,7 @@ export const useAuditForm = () => {
       if (response.ok) {
         console.log("Форма отправлена успешно!");
         setSubmitStatus("success");
-        setFormData({ name: "", email: "" });
+        setFormData({ name: "", contact: "" });
       } else {
         console.error("Ошибка отправки:", response.status);
         setSubmitStatus("error");
