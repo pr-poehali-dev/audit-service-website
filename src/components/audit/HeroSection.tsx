@@ -7,21 +7,20 @@ const HeroSection = () => {
   return (
     <section className="relative pt-20 pb-16 px-4">
       <div className="max-w-6xl mx-auto">
+        {/* Main Title - Full Width */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <span className="text-purple-600">
+              Бесплатный аудит команды и процессов
+            </span>
+            <br />
+            <span className="text-orange-500">30 минут конкретики</span>
+          </h1>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              <span className="text-purple-600">
-                Бесплатный аудит команды и процессов
-              </span>
-              <br />
-              <span className="text-orange-500">30 минут конкретики</span>
-            </h1>
-
-            <p className="text-xl md:text-2xl text-gray-700 mb-4">
-              Бесплатный аудит команды и процессов — 30 минут конкретики
-            </p>
-
             <p className="text-lg text-gray-600 mb-8">
               Для владельцев среднего бизнеса (5–50 сотрудников), которые устали
               быть «главными HR»
