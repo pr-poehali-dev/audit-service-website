@@ -21,26 +21,19 @@ const HeroSection = () => {
             <br />
             30 минут конкретики
           </h1>
+          <p className="text-lg text-gray-600 mb-2">
+            Для владельцев среднего бизнеса (5–50 сотрудников), которые устали
+            быть «главными HR»
+          </p>
+          <p className="text-lg text-gray-700 font-medium">
+            Оставь заявку — получи разбор твоих 'узких мест' + чек-лист '3
+            способа снизить текучку без бюджета'
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
-          <div className="text-center lg:text-left">
-            <p className="text-lg text-gray-600 mb-8">
-              Для владельцев среднего бизнеса (5–50 сотрудников), которые устали
-              быть «главными HR»
-            </p>
-
-            <div className="mb-8">
-              <p className="text-lg text-gray-700 font-medium">
-                Оставь заявку — получи разбор твоих 'узких мест' + чек-лист '3
-                способа снизить текучку без бюджета'
-              </p>
-            </div>
-          </div>
-
           {/* Google Form */}
-          <div className="flex justify-center">
+          <div className="flex justify-center lg:justify-start">
             <GoogleFormEmbed />
           </div>
 

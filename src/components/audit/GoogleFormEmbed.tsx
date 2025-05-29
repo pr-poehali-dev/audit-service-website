@@ -4,7 +4,7 @@ const GoogleFormEmbed = () => {
   return (
     <div className="w-full max-w-md mx-auto">
       <Card className="bg-white shadow-lg border border-gray-200">
-        <CardContent className="p-4">
+        <CardContent className="p-6">
           <div className="text-center mb-4">
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
               Получить аудит команды
@@ -18,7 +18,7 @@ const GoogleFormEmbed = () => {
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSfg8pMgQB1ZCAmhD-_Yvd40y9x3LclrPJxBHsJDy6ZqTmwVvg/viewform?embedded=true"
               width="100%"
-              height="400"
+              height="350"
               frameBorder="0"
               marginHeight={0}
               marginWidth={0}
