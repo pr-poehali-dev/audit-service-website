@@ -1,4 +1,4 @@
-export interface FormData {
+export interface AuditFormData {
   name: string;
   contact: string;
 }

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { FormData } from "@/types/audit";
+import { AuditFormData } from "@/types/audit";
 
 export const useAuditForm = () => {
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState<AuditFormData>({
     name: "",
     contact: "",
   });
@@ -29,17 +29,17 @@ export const useAuditForm = () => {
     try {
       console.log("Отправляем данные на formspree...");
 
-      const formData = new FormData();
-      formData.append("name", formData.name);
-      formData.append("email", formData.contact);
-      formData.append(
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.contact);
+      formDataToSend.append(
         "message",
         `Новая заявка на аудит от ${formData.name}. Контакт: ${formData.contact}`,
       );
 
       const response = await fetch("https://formspree.io/f/xpwdvvyk", {
         method: "POST",
-        body: formData,
+        body: formDataToSend,
       });
 
       console.log("Ответ от сервера:", response.status, response.statusText);
@@ -60,7 +60,7 @@ export const useAuditForm = () => {
     }
   };
 
-  const handleInputChange = (field: keyof FormData, value: string) => {
+  const handleInputChange = (field: keyof AuditFormData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
