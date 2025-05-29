@@ -37,14 +37,10 @@ const HeroSection = () => {
                 способа снизить текучку без бюджета'
               </p>
             </div>
+          </div>
 
-            <LeadForm
-              formData={formData}
-              isSubmitting={isSubmitting}
-              submitStatus={submitStatus}
-              onSubmit={handleSubmit}
-              onInputChange={handleInputChange}
-            />
+          {/* Google Form */}
+          <div className="flex justify-center lg:justify-end">
             <GoogleFormEmbed />
           </div>
 
