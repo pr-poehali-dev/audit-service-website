@@ -8,11 +8,13 @@ const HeroSection = () => {
     <section className="relative pt-20 pb-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          <span className="text-purple-600">10 бизнес-проблем,</span>
+          <span className="text-purple-600">92% собственников</span>
           <br />
-          которые ты терпишь, а твой
+          даже не подозревают, что теряют
           <br />
-          <span className="text-orange-500">конкурент уже исправил</span>
+          <span className="text-orange-500">
+            до 30% прибыли из-за этих ошибок
+          </span>
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-700 mb-4 max-w-4xl mx-auto">

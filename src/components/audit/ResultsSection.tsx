@@ -7,7 +7,7 @@ const ResultsSection = () => {
       description: "на 40% за 3 месяца",
     },
     {
-      title: "Время подбора",
+      title: "Время сокращения подбора",
       description: "с 34 до 12 дней",
     },
     {
@@ -23,7 +23,7 @@ const ResultsSection = () => {
           Проверено на 37 компаниях
         </h2>
         <p className="text-lg text-gray-600 mb-12">
-          в сфере деревообработки, строительства и HoReCa
+          в сфере строительства, производства и торговли
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">

@@ -8,9 +8,9 @@ const FinalCTASection = () => {
         <Card className="bg-white/95 backdrop-blur-sm shadow-xl">
           <CardContent className="p-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Осталось 3 слота на этой неделе
+              Осталось 3 оставшихся слота на этой неделе
             </h2>
-            <p className="text-xl text-gray-700 mb-8">Сейчас запишись!</p>
+            <p className="text-xl text-gray-700 mb-8">запишись сейчас!</p>
             <Button className="h-14 px-8 text-lg bg-orange-500 hover:bg-orange-600 text-white font-semibold">
               Забрать место
             </Button>
