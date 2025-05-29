@@ -29,7 +29,7 @@ export const useAuditForm = () => {
     try {
       console.log("Отправляем данные на formspree...");
 
-      const response = await fetch("https://formspree.io/f/xgvejqko", {
+      const response = await fetch("https://formspree.io/f/xpwdvvyk", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
