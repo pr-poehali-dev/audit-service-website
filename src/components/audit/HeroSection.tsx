@@ -40,7 +40,7 @@ const HeroSection = () => {
           </div>
 
           {/* Google Form */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center">
             <GoogleFormEmbed />
           </div>
 
