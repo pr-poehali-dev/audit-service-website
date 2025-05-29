@@ -29,9 +29,8 @@ export const useAuditForm = () => {
         },
         body: JSON.stringify({
           name: formData.name,
-          contact: formData.contact,
-          subject: "Новая заявка на аудит",
-          message: `Имя: ${formData.name}\nКонтакт: ${formData.contact}`,
+          email: formData.contact,
+          message: `Новая заявка на аудит от ${formData.name}. Контакт: ${formData.contact}`,
         }),
       });
 
