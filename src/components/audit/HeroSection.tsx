@@ -11,13 +11,11 @@ const HeroSection = () => {
           {/* Text Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              <span className="text-purple-600">92% собственников</span>
-              <br />
-              даже не подозревают, что теряют
-              <br />
-              <span className="text-orange-500">
-                до 30% прибыли из-за этих ошибок
+              <span className="text-purple-600">
+                Бесплатный аудит команды и процессов
               </span>
+              <br />
+              <span className="text-orange-500">30 минут конкретики</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-700 mb-4">
