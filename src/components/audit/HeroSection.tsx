@@ -9,12 +9,10 @@ const HeroSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Main Title - Full Width */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="text-purple-600">
-              Бесплатный аудит команды и процессов
-            </span>
+          <h1 className="text-4xl md:text-6xl font-bold text-blue-600 mb-6 leading-tight">
+            Бесплатный аудит команды и процессов
             <br />
-            <span className="text-orange-500">30 минут конкретики</span>
+            30 минут конкретики
           </h1>
         </div>
 
