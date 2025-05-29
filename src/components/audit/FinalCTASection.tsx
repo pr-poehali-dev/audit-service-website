@@ -14,11 +14,13 @@ const FinalCTASection = () => {
             <Button
               className="h-14 px-8 text-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold"
               onClick={() => {
-                const formElement = document.querySelector("form");
+                const formElement = document.querySelector(
+                  "iframe[src*='google.com/forms'], .google-form, [data-form='google']",
+                );
                 formElement?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Записаться на аудит
+              Занять место
             </Button>
           </CardContent>
         </Card>
