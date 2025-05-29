@@ -29,20 +29,17 @@ export const useAuditForm = () => {
     try {
       console.log("Отправляем данные на formspree...");
 
-      const response = await fetch(
-        "https://formspree.io/f/hrstrategya@yandex.ru",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.contact,
-            message: `Новая заявка на аудит от ${formData.name}. Контакт: ${formData.contact}`,
-          }),
+      const response = await fetch("https://formspree.io/f/xgvejqko", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.contact,
+          message: `Новая заявка на аудит от ${formData.name}. Контакт: ${formData.contact}`,
+        }),
+      });
 
       console.log("Ответ от сервера:", response.status, response.statusText);
 
