@@ -1,4 +1,5 @@
 import LeadForm from "./LeadForm";
+import GoogleFormEmbed from "./GoogleFormEmbed";
 import { useAuditForm } from "@/hooks/useAuditForm";
 
 const HeroSection = () => {
@@ -44,6 +45,7 @@ const HeroSection = () => {
               onSubmit={handleSubmit}
               onInputChange={handleInputChange}
             />
+            <GoogleFormEmbed />
           </div>
 
           {/* Image Content */}
