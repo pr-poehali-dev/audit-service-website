@@ -40,16 +40,8 @@ const LeadForm = ({
             type="submit"
             className="w-full h-12 text-lg bg-blue-500 hover:bg-blue-600 disabled:opacity-50"
             disabled={isSubmitting}
-            onClick={(e) => {
-              console.log("Кнопка нажата!", { formData, isSubmitting });
-              if (!formData.name.trim() || !formData.contact.trim()) {
-                e.preventDefault();
-                alert("Пожалуйста, заполните все поля");
-                return;
-              }
-            }}
           >
-            {isSubmitting ? "Отправляем..." : "Забрать место"}
+            {isSubmitting ? "Отправляем..." : "Записаться на аудит"}
           </Button>
 
           {submitStatus === "success" && (

@@ -11,8 +11,14 @@ const FinalCTASection = () => {
               Осталось 3 оставшихся слота на этой неделе
             </h2>
             <p className="text-xl text-gray-700 mb-8">Запишись сейчас!</p>
-            <Button className="h-14 px-8 text-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold">
-              Забрать место
+            <Button
+              className="h-14 px-8 text-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold"
+              onClick={() => {
+                const formElement = document.querySelector("form");
+                formElement?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Записаться на аудит
             </Button>
           </CardContent>
         </Card>
