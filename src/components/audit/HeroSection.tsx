@@ -2,7 +2,13 @@ import LeadForm from "./LeadForm";
 import { useAuditForm } from "@/hooks/useAuditForm";
 
 const HeroSection = () => {
-  const { formData, handleSubmit, handleInputChange } = useAuditForm();
+  const {
+    formData,
+    isSubmitting,
+    submitStatus,
+    handleSubmit,
+    handleInputChange,
+  } = useAuditForm();
 
   return (
     <section className="relative pt-20 pb-16 px-4">
@@ -32,6 +38,8 @@ const HeroSection = () => {
 
             <LeadForm
               formData={formData}
+              isSubmitting={isSubmitting}
+              submitStatus={submitStatus}
               onSubmit={handleSubmit}
               onInputChange={handleInputChange}
             />
