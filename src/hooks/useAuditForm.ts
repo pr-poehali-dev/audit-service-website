@@ -14,6 +14,13 @@ export const useAuditForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Проверяем, что все поля заполнены
+    if (!formData.name.trim() || !formData.contact.trim()) {
+      console.log("Поля не заполнены:", formData);
+      setSubmitStatus("error");
+      return;
+    }
+
     console.log("Отправка формы начата:", formData);
 
     setIsSubmitting(true);

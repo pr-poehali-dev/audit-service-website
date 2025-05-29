@@ -38,20 +38,29 @@ const LeadForm = ({
           />
           <Button
             type="submit"
-            className="w-full h-12 text-lg bg-blue-500 hover:bg-blue-600"
-            disabled={isSubmitting || !formData.name || !formData.contact}
+            className="w-full h-12 text-lg bg-blue-500 hover:bg-blue-600 disabled:opacity-50"
+            disabled={isSubmitting}
+            onClick={(e) => {
+              console.log("Кнопка нажата!", { formData, isSubmitting });
+              if (!formData.name.trim() || !formData.contact.trim()) {
+                e.preventDefault();
+                alert("Пожалуйста, заполните все поля");
+                return;
+              }
+            }}
           >
-            {isSubmitting ? "Отправляем..." : "Получить аудит бесплатно"}
+            {isSubmitting ? "Отправляем..." : "Забрать место"}
           </Button>
 
           {submitStatus === "success" && (
-            <p className="text-green-600 text-center">
-              Заявка отправлена! Скоро свяжемся с вами.
+            <p className="text-green-600 text-center font-medium">
+              ✅ Заявка отправлена! Скоро свяжемся с вами.
             </p>
           )}
           {submitStatus === "error" && (
-            <p className="text-red-600 text-center">
-              Ошибка отправки. Попробуйте еще раз.
+            <p className="text-red-600 text-center font-medium">
+              ❌ Ошибка отправки. Проверьте заполнение полей и попробуйте еще
+              раз.
             </p>
           )}
         </form>
