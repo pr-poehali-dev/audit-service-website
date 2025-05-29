@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { FormData } from "@/types/audit";
+
+interface FormData {
+  name: string;
+  contact: string;
+}
 
 export const useAuditForm = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -17,7 +21,6 @@ export const useAuditForm = () => {
     setSubmitStatus("idle");
 
     try {
-      // Временно используем Formspree (бесплатный сервис)
       const response = await fetch("https://formspree.io/f/xanorreo", {
         method: "POST",
         headers: {
