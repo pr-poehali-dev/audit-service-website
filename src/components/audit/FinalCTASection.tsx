@@ -10,7 +10,7 @@ const FinalCTASection = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Осталось 3 оставшихся слота на этой неделе
             </h2>
-            <p className="text-xl text-gray-700 mb-8">сейчас запишись!</p>
+            <p className="text-xl text-gray-700 mb-8">Запишись сейчас!</p>
             <Button className="h-14 px-8 text-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold">
               Забрать место
             </Button>
