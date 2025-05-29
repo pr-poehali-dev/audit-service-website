@@ -8,7 +8,7 @@ interface LeadFormProps {
   isSubmitting: boolean;
   submitStatus: "idle" | "success" | "error";
   onSubmit: (e: React.FormEvent) => void;
-  onInputChange: (field: keyof FormData, value: string) => void;
+  onInputChange: (field: keyof AuditFormData, value: string) => void;
 }
 
 const LeadForm = ({
