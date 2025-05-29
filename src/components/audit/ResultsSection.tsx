@@ -23,7 +23,7 @@ const ResultsSection = () => {
           Проверено на 37 компаниях
         </h2>
         <p className="text-lg text-gray-600 mb-12">
-          в сфере строительства, производства и торговли
+          в сфере деревообработки, строительства и HoReCa
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">

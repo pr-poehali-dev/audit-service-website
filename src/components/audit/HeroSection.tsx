@@ -10,9 +10,8 @@ const HeroSection = () => {
         {/* Main Title - Full Width */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Бесплатный аудит команды и процессов
-            <br />
-            30 минут конкретики
+            10 бизнес-проблем, которые ты терпишь,
+            <br />а твой конкурент уже исправил
           </h1>
         </div>
 
