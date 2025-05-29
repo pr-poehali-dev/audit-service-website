@@ -30,10 +30,10 @@ const ResultsSection = () => {
           {results.map((result, index) => (
             <Card
               key={index}
-              className="text-center border-2 hover:border-orange-200 transition-colors"
+              className="text-center border-2 hover:border-blue-200 transition-colors"
             >
               <CardHeader>
-                <CardTitle className="text-xl text-orange-600">
+                <CardTitle className="text-xl text-blue-600">
                   {result.title}
                 </CardTitle>
               </CardHeader>

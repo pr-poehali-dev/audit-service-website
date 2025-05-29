@@ -30,10 +30,10 @@ const ProcessSection = () => {
           {steps.map((step) => (
             <Card
               key={step.number}
-              className="text-center border-2 hover:border-purple-200 transition-colors"
+              className="text-center border-2 hover:border-blue-200 transition-colors"
             >
               <CardHeader>
-                <div className="text-4xl font-bold text-purple-600 mb-4">
+                <div className="text-4xl font-bold text-blue-600 mb-4">
                   {step.number}
                 </div>
                 <CardTitle className="text-xl">{step.title}</CardTitle>

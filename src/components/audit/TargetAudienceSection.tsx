@@ -22,7 +22,7 @@ const TargetAudienceSection = () => {
             >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mt-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 flex-shrink-0"></div>
                   <p className="text-lg text-gray-700">{item}</p>
                 </div>
               </CardContent>

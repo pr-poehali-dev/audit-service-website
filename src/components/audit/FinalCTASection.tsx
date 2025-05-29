@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const FinalCTASection = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-r from-orange-500 to-red-500">
+    <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-blue-700">
       <div className="max-w-4xl mx-auto text-center">
         <Card className="bg-white/95 backdrop-blur-sm shadow-xl">
           <CardContent className="p-8">
@@ -11,7 +11,7 @@ const FinalCTASection = () => {
               Осталось 3 оставшихся слота на этой неделе
             </h2>
             <p className="text-xl text-gray-700 mb-8">запишись сейчас!</p>
-            <Button className="h-14 px-8 text-lg bg-orange-500 hover:bg-orange-600 text-white font-semibold">
+            <Button className="h-14 px-8 text-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold">
               Забрать место
             </Button>
           </CardContent>
